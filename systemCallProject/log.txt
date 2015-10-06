@@ -1,0 +1,43 @@
+trode@linprog2:~/currentSemester/opSys/proj2>cat log
+execve("./part1.o", ["part1.o"], [/* 57 vars */]) = 0
+brk(0)                                  = 0x7f9fe957a000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9fe8405000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/tls/x86_64", 0x7ffffb4f1f60) = -1 ENOENT (No such file or directory)
+open("/usr/lib/tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/tls", 0x7ffffb4f1f60)    = -1 ENOENT (No such file or directory)
+open("/usr/lib/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/x86_64", 0x7ffffb4f1f60) = -1 ENOENT (No such file or directory)
+open("/usr/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=126976, ...}) = 0
+open("/usr/local/lib/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/tls/x86_64", 0x7ffffb4f1f60) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/tls", 0x7ffffb4f1f60) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/x86_64", 0x7ffffb4f1f60) = -1 ENOENT (No such file or directory)
+open("/usr/local/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=161760, ...}) = 0
+mmap(NULL, 161760, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f9fe83dd000
+close(3)                                = 0
+open("/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260 \2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1758520, ...}) = 0
+mmap(NULL, 3866432, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f9fe7e34000
+mprotect(0x7f9fe7fda000, 2097152, PROT_NONE) = 0
+mmap(0x7f9fe81da000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a6000) = 0x7f9fe81da000
+mmap(0x7f9fe81e0000, 16192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f9fe81e0000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9fe83dc000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9fe83db000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9fe83da000
+arch_prctl(ARCH_SET_FS, 0x7f9fe83db700) = 0
+mprotect(0x7f9fe81da000, 16384, PROT_READ) = 0
+mprotect(0x7f9fe8609000, 4096, PROT_READ) = 0
+mprotect(0x7f9fe8406000, 4096, PROT_READ) = 0
+munmap(0x7f9fe83dd000, 161760)          = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
